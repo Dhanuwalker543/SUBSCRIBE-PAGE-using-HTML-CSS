@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: white;
+}
+
+.subscription-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    border-radius: 8px;
+    text-align: center;
+    border-radius: 15px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.subscription-box {
+    padding: 20px;
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+    border: #666 2px solid;
+}
+
+.subscription-box h2 {
+    margin-top: 0;
+}
+
+.subscription-box p {
+    color: white;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"], input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #666;
+    color: black
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+label input[type="checkbox"] {
+    margin-right: 10px;
+    
+}
+
+button[type="submit"] {
+    padding: 10px;
+    color: black;
+    background-color: lightblue;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: palevioletred;
+}
+.parallax {
+    background-image: url("cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L25zMTQ2NTEtaW1hZ2Uta3d2eWQybmIuanBn.webp");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    </style>
+</head>
+<body class="parallax">
+    <div class="subscription-container">
+        <h1>BBC Newsletter</h1>
+        <div class="subscription-box">
+            <h2>Subscribe to our Newsletter</h2>
+            <p>Lorem ipsum text about why you should subscribe to our newsletter blabla. Lorem ipsum text about why you should subscribe to our newsletter blabla.</p>
+            <form action="#">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email address" required>
+                <label>
+                    <input type="checkbox" checked="checked"> Daily Newsletter
+                </label>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
